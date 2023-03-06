@@ -18,12 +18,21 @@ export class BooksComponent implements OnInit {
   author2 : string = "Robert C Martin"
   src2 : string = "https://m.media-amazon.com/images/I/71s6gwpezHL._AC_UY218_.jpg"
 
-  isDesabled : boolean = true;
+  isDesabled : boolean = false;
 
   constructor(){}
   
   ngOnInit(): void {
     
+  }
+
+
+  handleClick(){
+    alert("I am working!");
+  }
+
+  handleMouseOver(){
+    alert("mouse over working!")
   }
 
 }

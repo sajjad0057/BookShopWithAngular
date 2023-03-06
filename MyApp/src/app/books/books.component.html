@@ -1,5 +1,5 @@
 <h2>Programming Book List!</h2>
-<button [disabled] = isDesabled >button</button>
+<button (click) = "handleClick()" (mouseover)="handleMouseOver()" [disabled] = isDesabled >button</button>
 <ul>
     <li>
         <img [src]="src" [alt]="name" width="100px">
