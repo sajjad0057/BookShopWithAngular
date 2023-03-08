@@ -26,13 +26,14 @@ export class BooksComponent implements OnInit {
     
   }
 
-
   handleClick(){
     alert("I am working!");
   }
 
-  handleMouseOver(){
-    alert("mouse over working!")
+  MyName : string = "";
+
+  handleInput(event:any){
+    this.MyName = event.target.value
   }
 
 }

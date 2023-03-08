@@ -1,5 +1,9 @@
 <h2>Programming Book List!</h2>
-<button (click) = "handleClick()" (mouseover)="handleMouseOver()" [disabled] = isDesabled >button</button>
+<button (click) = "handleClick()" [disabled] = isDesabled >button</button>
+<input type="text" (input)="handleInput($event)" placeholder="Write Your Name">
+<h4>Your name : </h4> 
+<span>{{MyName}}</span>
+<hr>
 <ul>
     <li>
         <img [src]="src" [alt]="name" width="100px">
