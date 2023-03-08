@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface IBook{
-  name : string,
-  author : string,
-  img : string,
-  price : number
-}
+import { IBook } from '../types/IBook';
 
 @Component({
   selector: 'app-books',
@@ -13,7 +7,7 @@ interface IBook{
   styleUrls: ['./books.component.css']
 })
 export class BooksComponent implements OnInit {
-  
+
   books : IBook[] = [
     {
       name : "c# basic",
@@ -22,9 +16,9 @@ export class BooksComponent implements OnInit {
       price : 700
     },
     {
-      name : "c# intermediate",
-      author : "Robert C Martin",
-      img :  "https://m.media-amazon.com/images/I/71s6gwpezHL._AC_UY218_.jpg",
+      name : "Affirmation Alphabet",
+      author : "Briana Beth Hetherington",
+      img :  "https://m.media-amazon.com/images/I/51g6vuvgPaL.jpg",
       price : 600
     },
     {
@@ -35,6 +29,8 @@ export class BooksComponent implements OnInit {
     }
   ] 
 
+
+  cart : IBook[] = [];
   isDesabled : boolean = false;
   isShowing : boolean = false;
   myName : string = "" ;
@@ -52,5 +48,10 @@ export class BooksComponent implements OnInit {
   handleInput(event:any){
     this.myName = event.target.value
   }
+
+  addToCart(event:IBook) {
+    console.log(event);
+    
+    }
 
 }
