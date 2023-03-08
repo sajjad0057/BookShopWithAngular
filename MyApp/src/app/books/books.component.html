@@ -1,11 +1,12 @@
-<h2>Programming Book List!</h2>
 <button (click) = "handleClick()" [disabled] = isDesabled >button</button>
-
-<input type="text" [(ngModel)]="myName" />
+<br>
+<input type="text" [(ngModel)]="myName" placeholder="Write your name"/>
 <h4>Your name : </h4> 
 <span>{{myName}}</span>
 <hr>
-<ul>
+<h2>Programming Book List!</h2>
+<button (click)="toggleBooks()">{{buttonName}}</button>
+<ul *ngIf="isShowing">
     <li>
         <img [src]="src" [alt]="name" width="100px">
         {{name}} by {{author}}

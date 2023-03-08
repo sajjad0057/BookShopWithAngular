@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
   
-
-
-
   name : string = "c# basic";
   author : string = "Robert C Martin"
   src : string = "https://m.media-amazon.com/images/I/61yRxqI4WfL._AC_UY218_.jpg"
@@ -19,6 +16,9 @@ export class BooksComponent implements OnInit {
   src2 : string = "https://m.media-amazon.com/images/I/71s6gwpezHL._AC_UY218_.jpg"
 
   isDesabled : boolean = false;
+  isShowing : boolean = false;
+  buttonName : string = "show books";
+  myName : string = "";
 
   constructor(){}
   
@@ -30,10 +30,17 @@ export class BooksComponent implements OnInit {
     alert("I am working!");
   }
 
-  myName : string = "";
-
   handleInput(event:any){
     this.myName = event.target.value
+  }
+
+  toggleBooks(){
+    this.isShowing = !this.isShowing
+    if(this.isShowing == true){
+      this.buttonName = "hide books"
+    }else{
+      this.buttonName = "show books"
+    }
   }
 
 }
