@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+interface IBook{
+  name : string,
+  author : string,
+  img : string
+}
+
 @Component({
   selector: 'app-books',
   templateUrl: './books.component.html',
@@ -7,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
   
-  books : Array<{name:string; author:string; img:string;}> = [
+  books : IBook[] = [
     {
       name : "c# basic",
       author : "Robert C Martin",
