@@ -1,8 +1,9 @@
 <h2>Programming Book List!</h2>
 <button (click) = "handleClick()" [disabled] = isDesabled >button</button>
-<input type="text" (input)="handleInput($event)" placeholder="Write Your Name">
+
+<input type="text" [(ngModel)]="myName" />
 <h4>Your name : </h4> 
-<span>{{MyName}}</span>
+<span>{{myName}}</span>
 <hr>
 <ul>
     <li>

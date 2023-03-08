@@ -30,10 +30,10 @@ export class BooksComponent implements OnInit {
     alert("I am working!");
   }
 
-  MyName : string = "";
+  myName : string = "";
 
   handleInput(event:any){
-    this.MyName = event.target.value
+    this.myName = event.target.value
   }
 
 }
