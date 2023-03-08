@@ -17,8 +17,7 @@ export class BooksComponent implements OnInit {
 
   isDesabled : boolean = false;
   isShowing : boolean = false;
-  buttonName : string = "show books";
-  myName : string = "";
+  myName : string = "" ;
 
   constructor(){}
   
@@ -32,15 +31,6 @@ export class BooksComponent implements OnInit {
 
   handleInput(event:any){
     this.myName = event.target.value
-  }
-
-  toggleBooks(){
-    this.isShowing = !this.isShowing
-    if(this.isShowing == true){
-      this.buttonName = "hide books"
-    }else{
-      this.buttonName = "show books"
-    }
   }
 
 }

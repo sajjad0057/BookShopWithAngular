@@ -5,7 +5,10 @@
 <span>{{myName}}</span>
 <hr>
 <h2>Programming Book List!</h2>
-<button (click)="toggleBooks()">{{buttonName}}</button>
+<button (click)="isShowing = !isShowing">
+    <ng-container *ngIf="!isShowing">Show books</ng-container>
+    <ng-container *ngIf="isShowing">Hide books</ng-container>
+</button>
 <ul *ngIf="isShowing">
     <li>
         <img [src]="src" [alt]="name" width="100px">
