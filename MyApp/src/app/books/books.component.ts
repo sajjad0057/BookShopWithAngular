@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 interface IBook{
   name : string,
   author : string,
-  img : string
+  img : string,
+  price : number
 }
 
 @Component({
@@ -17,17 +18,20 @@ export class BooksComponent implements OnInit {
     {
       name : "c# basic",
       author : "Robert C Martin",
-      img : "https://m.media-amazon.com/images/I/61yRxqI4WfL._AC_UY218_.jpg"
+      img : "https://m.media-amazon.com/images/I/61yRxqI4WfL._AC_UY218_.jpg",
+      price : 700
     },
     {
-      name : "c# Intermediate",
+      name : "c# intermediate",
       author : "Robert C Martin",
-      img :  "https://m.media-amazon.com/images/I/71s6gwpezHL._AC_UY218_.jpg"
+      img :  "https://m.media-amazon.com/images/I/71s6gwpezHL._AC_UY218_.jpg",
+      price : 600
     },
     {
-      name : "Good for a Girl",
+      name : "good for a girl",
       author : "Lauren Fleshman",
-      img :  "https://images-na.ssl-images-amazon.com/images/I/51+mYU+YUwL._AC_SX184_.jpg"
+      img :  "https://images-na.ssl-images-amazon.com/images/I/51+mYU+YUwL._AC_SX184_.jpg",
+      price : 800
     }
   ] 
 
