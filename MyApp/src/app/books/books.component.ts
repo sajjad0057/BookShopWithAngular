@@ -7,13 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksComponent implements OnInit {
   
-  name : string = "c# basic";
-  author : string = "Robert C Martin"
-  src : string = "https://m.media-amazon.com/images/I/61yRxqI4WfL._AC_UY218_.jpg"
-
-  name2 : string = "c# Intermediate";
-  author2 : string = "Robert C Martin"
-  src2 : string = "https://m.media-amazon.com/images/I/71s6gwpezHL._AC_UY218_.jpg"
+  books : Array<{name:string; author:string; img:string;}> = [
+    {
+      name : "c# basic",
+      author : "Robert C Martin",
+      img : "https://m.media-amazon.com/images/I/61yRxqI4WfL._AC_UY218_.jpg"
+    },
+    {
+      name : "c# Intermediate",
+      author : "Robert C Martin",
+      img :  "https://m.media-amazon.com/images/I/71s6gwpezHL._AC_UY218_.jpg"
+    },
+    {
+      name : "Good for a Girl",
+      author : "Lauren Fleshman",
+      img :  "https://images-na.ssl-images-amazon.com/images/I/51+mYU+YUwL._AC_SX184_.jpg"
+    }
+  ] 
 
   isDesabled : boolean = false;
   isShowing : boolean = false;
