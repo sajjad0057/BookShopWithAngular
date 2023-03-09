@@ -35,9 +35,13 @@ export class BooksComponent implements OnInit {
   isShowing : boolean = false;
   myName : string = "" ;
 
-  constructor(){}
+  constructor(){
+    console.log({constructor : "constructor"});
+    
+  }
   
   ngOnInit(): void {
+    console.log({ onInit : "On In It"});
     
   }
 
