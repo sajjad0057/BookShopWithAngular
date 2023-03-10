@@ -2,7 +2,7 @@
 <h3>Your Cart</h3>
 <div *ngIf="getCart().length > 0">
     <div *ngFor = "let book of getCart()">
-        <p>{{book.name}}</p>
+        <p class="my-4 text-2xl">{{book.name}}</p>
     </div>
 </div>
 <div *ngIf="getCart().length == 0">No books in your cart</div>

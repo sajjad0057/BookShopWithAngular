@@ -1,4 +1,13 @@
-<h1>hello world</h1>
-<hr>
-<app-books></app-books>
-<app-cart></app-cart>
+<nav class="flex justify-between p-5 bg-purple-900 text-white">
+    <div>
+        <a routerLink="/">Book Shop</a>
+    </div>
+    <div>
+        <a routerLink="/cart">My Cart</a>
+    </div>
+</nav>
+
+<div class="container p-4">
+    <router-outlet></router-outlet>
+
+</div>
