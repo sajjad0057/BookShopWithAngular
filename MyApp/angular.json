@@ -102,6 +102,10 @@
     }
   },
   "cli": {
-    "analytics": "93d667dc-7243-472a-9b6b-63a5e52b7cb0"
+    "analytics": "93d667dc-7243-472a-9b6b-63a5e52b7cb0",
+    "cache": {
+      "enabled": false,
+      "path": ".cache/ng"
+    }
   }
 }

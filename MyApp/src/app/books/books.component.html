@@ -1,6 +1,6 @@
 <button (click) = "handleClick()" [disabled] = isDesabled >button</button>
 <br>
-<input type="text" [(ngModel)]="myName" placeholder="Write your name"/>
+<input type="text"[(ngModel)]="myName" placeholder="Write your name"/>
 <h4>Your name : </h4> 
 <span>{{myName}}</span>
 <hr>
@@ -11,7 +11,7 @@
 </button>
 <ul *ngIf="isShowing">
     <ng-container *ngFor="let singleBook of books">
-        <app-book (bookEmitter)="addToCart($event)" [book] = "singleBook"></app-book>
+        <app-book [book] = "singleBook"></app-book>
     </ng-container>
 </ul>
 
