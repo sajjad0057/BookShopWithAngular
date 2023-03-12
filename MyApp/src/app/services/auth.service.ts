@@ -31,6 +31,7 @@ export class AuthService {
         const errorCode = error.code;
         const errorMessage = error.message;
         this.isAuthenticated = false;
+        this.isLoading = false;
       })
       return {
         email : '',
